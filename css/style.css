@@ -1,0 +1,1204 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "roboto", sans-serif;
+    box-sizing: border-box;
+
+}
+
+/* diseño del index*/
+
+
+/* Estilo base para la barra de navegación */
+.custom-bg {
+    background-color: #474847;
+
+}
+
+.navbar {
+    padding: 1px !important;
+}
+
+.container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav .nav-link i {
+    color: #f0f0f0;
+}
+
+.navbar-nav :hover {
+    color: #fceb24 !important;
+
+}
+
+.navbar-brand {
+    justify-content: flex-end;
+    /* Justifica al margen derecho */
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.navbar-brand img {
+    width: 150px;
+    /* Ajusta el ancho según tus necesidades */
+    height: 50px;
+    /* Mantiene la proporción original */
+    padding: 10px;
+}
+
+/*.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}*/
+.nav-izq {
+    justify-content: flex-end;
+    flex-basis: 0;
+    flex-grow: 0;
+}
+
+.active {
+    font-weight: bold;
+    color: #f0f0f0 !important;
+}
+
+/*---------------------diseño de portada index --------------*/
+
+.jumbotron {
+    background-image: url("../recursos/imagen\ index.png");
+    background-size: cover;
+    color: #050505;
+    text-align: center;
+    padding: 100px 0;
+    font-family: 'Roboto', sans-serif !important;
+    margin: 5px;
+  
+
+
+}
+
+
+
+
+
+.btn-primary {
+    background-color: #474746 !important;
+    border: none !important;
+
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Transición suave */
+}
+
+.btn-primary:hover {
+    background-color: #fceb24 !important;
+    /* Color diferente al pasar el cursor */
+}
+
+/*------------------ tarjetas secciones index-------------- */
+
+
+.card-1 {
+    background-image: url('../recursos/productos.png');
+    /* Cambia 'ruta_de_la_imagen.jpg' por la ruta de tu imagen de fondo */
+    background-size: cover;
+    color: white;
+    height: 150px;
+    margin: 15px auto;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+   
+}
+
+
+
+.card-1:hover {
+    transform: scale(0.9, 0.9);
+
+}
+
+.card-2 {
+    background-image: url('../recursos/DESCARGAS2.png');
+    /* Cambia 'ruta_de_la_imagen.jpg' por la ruta de tu imagen de fondo */
+    background-size: cover;
+    color: white;
+    height: 150px;
+    margin: 15px auto;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.card-2:hover {
+    transform: scale(0.9, 0.9);
+
+}
+
+
+.card-3 {
+    background-image: url('../recursos/servicios-index.png');
+    /* Cambia 'ruta_de_la_imagen.jpg' por la ruta de tu imagen de fondo */
+    background-size: cover;
+    color: white;
+    height: 150px;
+    margin: 15px auto;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.card-3:hover {
+    transform: scale(0.9, 0.9);
+
+}
+
+.card-4 {
+    background-image: url('../recursos/contacto.png');
+    /* Cambia 'ruta_de_la_imagen.jpg' por la ruta de tu imagen de fondo */
+    background-size: cover;
+    color: white;
+    height: 150px;
+    margin: 15px auto;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.card-4:hover {
+    transform: scale(0.9, 0.9);
+
+}
+
+@media all and (max-width: 500px) {
+    .cards-list {
+
+        flex-direction: column;
+    }
+}
+
+/*---------------------grid area productos destacados --------------*/
+
+.main-galeria h2 {
+
+
+    border-radius: 0px 0px 40px 40px;
+    color: #ffffff;
+
+    /*font-size: 30px;*/
+
+    height: 1px;
+
+    padding: 50px;
+    background-color: #474847;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white
+}
+
+.galeria {
+    display: flex;
+    gap: 20px;
+    margin: 5%;
+}
+
+.imagen {
+    position: relative;
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.ver-mas {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #474746;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    /* Transición suave */
+}
+
+.ver-mas:hover {
+    background-color: #fceb24;
+}
+
+/* Color diferente al pasar el cursor */
+
+/*------------------ footer index-------------- */
+footer {
+    display: flex;
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #474847;
+    z-index: 10;
+    margin-top: 1rem;
+    gap: 1rem;
+    box-shadow: 0 -2px 5px 0 rgba(0,0,0,0.2);
+    font-size: 15px;
+    color: #f0f0f0;
+}
+
+img.logo {
+    max-width: 100px;
+    /* Ajusta el tamaño según tus necesidades */
+    margin-right: 10px;
+    /* Espacio entre el logotipo y el texto */
+
+}
+
+/*------------------ menu ruta de navegacion- productos-------------- */
+
+
+.breadcrumb {
+    list-style: none;
+    padding: 0px 10px!important;
+    /* Remove any default padding */
+    margin:0;
+}
+
+.breadcrumb-item {
+    display: inline-block;
+    /* Display the breadcrumb items horizontally */
+    margin-right: 5px;
+    /* Add spacing between items */
+    
+
+}
+.breadcrumb-item.active {
+    color: #848e97 !important;
+}
+
+
+.breadcrumb-item a {
+    text-decoration: none;
+    /* Remove underlines from links */
+    color: #070707;
+    /* Set link color */
+
+}
+
+.breadcrumb-item a:hover {
+
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.breadcrumb-item.active {
+    color: #848e97;
+    /* Set color for active item */
+}
+
+
+
+/*------------------ portada productos-------------- */
+.jumbotron-1 {
+    background-image: url("../recursos/Productos\ portada.png");
+    background-size: cover;
+
+    color: #050505;
+    text-align: center;
+    padding: 70px 0;
+
+    margin: 10px 10px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: space-around;
+    align-items: stretch;
+
+
+
+}
+
+.jumbotron-1 h1 {
+
+    font-size: 36px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif !important;
+
+
+}
+
+.jumbotron-1 p {
+    background-color: #f0f0f0;
+    /* Color de fondo para resaltar el bloque */
+    padding: 30px;
+    /* Espaciado interno */
+    width: 50%;
+    opacity: 0.9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.texto-negrita {
+    font-weight: bold;
+}
+
+
+
+
+/*------------------ tarjetas secciones prodcutos-------------- */
+.grid-container {
+    display: grid;
+    margin: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    /* Tres columnas con igual ancho */
+    gap: 20px;
+    /* Espacio entre las tarjetas */
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    display: grid
+}
+
+.product-description {
+    padding-right: 20px;
+    height: 100px;
+    width: 50%;
+    color: #f0f0f0;
+
+}
+
+.product-description p {
+    color: #050505;
+
+}
+
+.product-description h2 {
+    font-size: 20px;
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    width: 300%;
+    /* Ajusta el ancho según tus necesidades */
+    height: 100%;
+}
+
+/*------------------ portada descargas-------------- */
+.jumbotron-2 {
+    background-image: url("https://img.freepik.com/foto-gratis/descargar-concepto-red-conexion-compartida-internet_53876-148096.jpg?t=st=1711069681~exp=1711073281~hmac=8f8853806a4492296b39c980a231c9c7b222c172642bce5e6f0d456919c65d9d&w=740");
+    background-size: cover;
+    color: #050505;
+    text-align: center;
+    padding: 70px 0;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: space-around;
+    align-items: stretch;
+
+
+
+}
+
+.jumbotron-2 h1 {
+
+    font-size: 36px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif !important;
+
+
+}
+
+.jumbotron-2 p {
+    background-color: #f0f0f0;
+    /* Color de fondo para resaltar el bloque */
+    padding: 30px;
+    /* Espaciado interno */
+    width: 50%;
+    opacity: 0.9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-instructivo h2 {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    color: #f0f0f0;
+    margin-bottom: 30px;
+    background-color: #474746;
+    border-radius: 5px;
+    color: #f0f0f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+
+
+}
+
+/*------------------ tarjetas descargas-------------- */
+.center {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+
+.article-card {
+    width: 300px;
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 300ms;
+}
+
+.article-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.article-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.article-card .content {
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    padding: 30px 20px 20px 20px;
+    height: auto;
+    bottom: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+}
+
+
+
+
+.article-card .date {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 4px;
+}
+
+.article-card .title {
+    font-size: 17px;
+    color: #fff;
+    margin: 0;
+
+}
+
+/*------------------ portada servicios-------------- */
+.jumbotron-3 {
+    background-image: url("../recursos/servicios.png");
+    background-size: cover;
+    color: #050505;
+    text-align: center;
+    padding: 70px 0;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: space-around;
+    align-items: stretch;
+
+
+
+}
+
+.jumbotron-3 h1 {
+
+    font-size: 36px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.jumbotron-3 p {
+    background-color: #f0f0f0;
+    /* Color de fondo para resaltar el bloque */
+    padding: 30px;
+    /* Espaciado interno */
+    width: 50%;
+    opacity: 0.9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*------------------ main servicios-------------- */
+.container-servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Dos columnas: imagen y texto */
+    gap: 20px;
+    /* Espacio entre las columnas */
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    grid-template-areas:
+        "log-img logist"
+        "post post-img";
+
+}
+
+
+
+.item-log-img {
+    -border: 1px solid #ccc;
+    padding: 20px;
+    align-self: center;
+    grid-area: log-img;
+
+}
+
+.item-logist {
+    grid-area: logist;
+    padding: 20px;
+    align-self: center;
+
+}
+
+.item-post {
+    grid-area: post;
+    /* Asigna un área llamada "post" */
+    padding: 20px;
+    align-self: center;
+}
+
+.item-post-img {
+    grid-area: post-img;
+    /* Asigna un área llamada "post-img" */
+    padding: 20px;
+    align-self: center;
+}
+
+h2 {
+    background-color: #474746;
+    border-radius: 5px;
+    color: #f0f0f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+p.text {
+    padding: 20px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+
+/*------------------ main contacto-------------- */
+
+.texto {
+
+    /* Estilos para el bloque de texto */
+    width: 40%;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 2% 35%;
+
+
+}
+
+.contenedor-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    /* Columna del formulario es el doble de ancho */
+    gap: 20px;
+    /* Espacio entre las columnas */
+    max-width: 100%;
+    /* Ocupa todo el ancho de la pantalla */
+    padding: 20px;
+}
+
+
+
+.card-mapa {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+
+}
+
+.card-formulario {
+
+
+
+
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 100%;
+}
+
+.card-sucursales {
+    /*border: 1px solid #ccc;*/
+    padding: 20px;
+    /*border-radius: 8px;*/
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.card-sucursales h2 {
+    font-size: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+
+
+.form {
+
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+}
+
+
+
+/* estilos para el form */
+
+
+.form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+
+}
+
+.form input,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+
+}
+
+.form input[type="submit"] {
+    background-color: #474746;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #fceb24;
+}
+
+
+
+
+
+
+
+/* -----------------------------------media queries--------------------------------------  */
+
+/* ------navbar todas las secciones ----- */
+/*@media (max-width: 768px) {
+    .navbar {
+
+        padding: 10px;
+    }
+
+    .horizontal {
+
+        gap: 10px;
+    }
+}*/
+@media (max-width: 768px) {
+    .navbar-nav {
+        justify-content: flex-end
+    }
+
+    .container-fluid {
+        display: block
+    }
+
+
+}
+
+
+
+
+
+@media (max-width: 375px) {
+    .navbar {
+        padding: 10px;
+        /* Reduce el espacio de relleno */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar-logo img {
+        width: 80px;
+        /* Ajusta el tamaño del logotipo */
+    }
+
+    .horizontal li {
+        font-size: 8px;
+        /* Reduce el tamaño de fuente para los elementos de navegación */
+    }
+}
+
+/* ------footer todas las secciones ----- */
+
+@media (max-width: 768px) {
+    footer {
+        padding: 5px;
+        /* Reduce el espacio de relleno */
+    }
+
+    img.logo {
+        max-width: 80px;
+        /* Ajusta el tamaño del logotipo */
+    }
+}
+
+@media (max-width: 375px) {
+    footer {
+        padding: 5px;
+        /* Reduce el espacio de relleno */
+        flex-wrap: wrap;
+        font-size: small;
+    }
+
+    img.logo {
+        max-width: 80px;
+        /* Ajusta el tamaño del logotipo */
+    }
+}
+
+
+/* -----------------------------seccion index---------------------------  */
+
+/* RESPOSIVE productos destacados */
+/* Tablet  */
+@media (max-width: 768px) {
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Cambia a una sola columna en dispositivos móviles */
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .galeria h2 {
+        font-size: 0;
+    }
+}
+@media (max-width: 375px) {
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Cambia a una sola columna en dispositivos móviles */
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .galeria h2 {
+        font-size: 0;
+    }
+}
+/* ------------------------------seccion productos------------------------  */
+
+/*----- RESPOSIVE portada de productos----- */
+@media (max-width: 768px) {
+    .jumbotron-1 {
+        background-size: none;
+        padding: 50px 0;
+
+    }
+
+    .jumbotron-1 p {
+        width: 70%;
+    }
+}
+
+@media (max-width: 375px) {
+    .jumbotron-1 p {
+        width: 70%;
+        padding: 15px;
+        background-size: none;
+        padding: 50px 0;
+        font-size: 15px;
+    }
+
+    .jumbotron-1 h1 {
+
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .jumbotron-1 p {
+
+        width: 100%;
+
+        padding: 20px;
+    }
+}
+
+/*----- RESPOSIVE tarjeta de productos----- */
+@media (max-width: 375px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        margin: 5px 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+
+    }
+
+    .product-description h2 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .product-description p {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+    .product-image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+/*--RESPOSIVE  munu de ruta de navegacion- productos------  */
+@media (max-width: 375px) {
+    .navbar1 {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 1%;
+        font-size: 15px;
+        margin: 0px 10px;
+
+
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar1 {
+        background-color: #ffffff;
+        padding: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 50%;
+        /* Ajusta el ancho según tus necesidades */
+
+    }
+}
+
+/* ------------------------------seccion descargas------------------------  */
+
+/* ----RESPOSIVE tarjetas de instructivos descargas---- */
+@media (max-width: 768px) {
+
+    .article-card {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .article-card {
+        width: none
+    }
+}
+
+/* ----RESPOSIVE portada descargas---- */
+@media (max-width: 768px) {
+    .jumbotron-2 {
+        background-size: none;
+        padding: 50px 0;
+
+    }
+
+    .jumbotron-2 p {
+        width: 70%;
+    }
+}
+
+@media (max-width: 375px) {
+    .jumbotron-2 p {
+        width: 70%;
+        padding: 15px;
+        background-size: none;
+        padding: 50px 0;
+        font-size: 15px;
+    }
+
+    .jumbotron-2 h1 {
+
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .jumbotron-2 p {
+
+        width: 100%;
+
+        padding: 20px;
+    }
+}
+
+/* ------------------------------seccion servicios------------------------  */
+
+/* ----RESPOSIVE portada servicios---- */
+@media (max-width: 768px) {
+    .jumbotron-3 {
+        background-size: none;
+        padding: 50px 0;
+
+    }
+
+    .jumbotron-3 p {
+        width: 70%;
+    }
+}
+
+@media (max-width: 375px) {
+    .jumbotron-3 p {
+        width: 70%;
+        padding: 15px;
+        background-size: none;
+        padding: 50px 0;
+        font-size: 15px;
+
+    }
+
+    .jumbotron-3 h1 {
+
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .jumbotron-3 p {
+
+        width: 100%;
+
+        padding: 20px;
+    }
+}
+
+/* ----RESPOSIVE main servicios---- */
+@media (max-width: 768px) {
+
+    p.text {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container-servicios {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    p.text {
+        font-size: 15px;
+        gap: 10px;
+
+
+    }
+
+    h2 {
+        font-size: 20px;
+
+    }
+}
+
+/* ------------------------------seccion contacto------------------------  */
+
+/* ----RESPOSIVE  formulario de contacto---- */
+@media (max-width: 768px) {
+    .texto {
+        width: 100%;
+        /* Opcional: Ajusta el ancho según tus necesidades */
+        font-size: 15px;
+        line-height: 1.5;
+
+        /* Centra horizontalmente */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .contenedor-contacto {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        /* Espacio entre las columnas */
+        max-width: 100%;
+        /* Ocupa todo el ancho de la pantalla */
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .card-formulario {
+
+        display: flex;
+        flex-wrap: wrap;
+        flex: 0 0 80%;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .texto {
+        width: 100%;
+        /* Opcional: Ajusta el ancho según tus necesidades */
+        font-size: 15px;
+        line-height: 1.5;
+        margin: 5% 10%;
+        /* Centra horizontalmente */
+    }
+
+    .contenedor-contacto {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        /* Espacio entre las columnas */
+        max-width: 100%;
+        /* Ocupa todo el ancho de la pantalla */
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .card-mapa {
+        display: flex;
+        height: 10%;
+        align-content: center
+    }
+
+    .card-mapa img {
+        max-width: 80%;
+        /* La imagen no será más ancha que la columna */
+        height: 60%;
+        /* Mantiene la proporción de aspecto*/
+    }
+
+    .card-formulario {
+
+        display: flex;
+        flex-wrap: wrap;
+        flex: 0 0 100%;
+    }
+
+    .card-sucursales {
+        /*border: 1px solid #ccc;*/
+        padding: 20px;
+        /*border-radius: 8px;*/
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .card-sucursales p {
+        font-size: 12px;
+    }
+
+    .form label {
+        font-size: 15px;
+
+    }
+
+    .form input,
+    textarea {
+        font-size: 12px;
+
+    }
+
+    .form input[type="submit"] {
+        font-size: 15px;
+    }
+
+}
