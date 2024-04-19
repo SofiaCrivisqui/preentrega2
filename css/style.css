@@ -961,8 +961,8 @@ textarea {
 
 @media (max-width: 425px) {
     .grid-container {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         align-items: center;
     }
 
@@ -992,8 +992,8 @@ textarea {
 
 @media (max-width: 375px) {
     .grid-container {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         align-items: center;
     }
 
@@ -1158,6 +1158,7 @@ textarea {
     .container-servicios {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
     }
 
     p.text {
@@ -1205,82 +1206,11 @@ textarea {
         padding: 10px;
     }
 }
-
-@media (max-width: 375px) {
-    .container-servicios {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    p.text {
-        font-size: 15px;
-        gap: 10px;
-
-
-    }
-
-    h2 {
-        font-size: 20px;
-
-    }
-}
-
-@media (max-width: 375px) {
-    .jumbotron-3 p {
-        width: 70%;
-        padding: 15px;
-        background-size: none;
-        padding: 50px 0;
-        font-size: 15px;
-
-    }
-
-    .jumbotron-3 h1 {
-
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-
-    .jumbotron-3 p {
-
-        width: 100%;
-
-        padding: 20px;
-    }
-}
-
-/* ----RESPOSIVE main servicios---- */
-@media (max-width: 768px) {
-
-    p.text {
-        font-size: 15px;
-        padding: 10px;
-    }
-}
-
-@media (max-width: 375px) {
-    .container-servicios {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    p.text {
-        font-size: 15px;
-        gap: 10px;
-
-
-    }
-
-    h2 {
-        font-size: 20px;
-
-    }
-}
-
 @media (max-width: 425px) {
     .container-servicios {
-        display: flex;
-        flex-wrap: wrap;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        flex-direction: column !important;
     }
 
     p.text {
@@ -1293,6 +1223,50 @@ textarea {
     h2 {
         font-size: 20px;
 
+    }
+}
+
+@media (max-width: 375px) {
+    .container-servicios {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        flex-direction: column !important;
+    }
+
+    p.text {
+        font-size: 15px;
+        gap: 10px;
+
+
+    }
+
+    h2 {
+        font-size: 20px;
+
+    }
+}
+
+@media (max-width: 375px) {
+    .jumbotron-3 p {
+        width: 70%;
+        padding: 15px;
+        background-size: none;
+        padding: 50px 0;
+        font-size: 15px;
+
+    }
+
+    .jumbotron-3 h1 {
+
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .jumbotron-3 p {
+
+        width: 100%;
+
+        padding: 20px;
     }
 }
 
