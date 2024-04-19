@@ -915,6 +915,36 @@ textarea {
 }
 
 /*----- RESPOSIVE tarjeta de productos----- */
+@media (max-width: 425px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        margin: 5px 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+
+    }
+
+    .product-description h2 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .product-description p {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+    .product-image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
 @media (max-width: 375px) {
     .grid-container {
         display: flex;
@@ -945,7 +975,6 @@ textarea {
         height: auto;
     }
 }
-
 
 /*--RESPOSIVE  munu de ruta de navegacion- productos------  */
 @media (max-width: 375px) {
@@ -1091,7 +1120,126 @@ textarea {
 
     }
 }
+@media (max-width: 375px) {
+    .jumbotron-3 p {
+        width: 70%;
+        padding: 15px;
+        background-size: none;
+        padding: 50px 0;
+        font-size: 15px;
 
+    }
+
+    .jumbotron-3 h1 {
+
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .jumbotron-3 p {
+
+        width: 100%;
+
+        padding: 20px;
+    }
+}
+
+/* ----RESPOSIVE main servicios---- */
+@media (max-width: 768px) {
+
+    p.text {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container-servicios {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    p.text {
+        font-size: 15px;
+        gap: 10px;
+
+
+    }
+
+    h2 {
+        font-size: 20px;
+
+    }
+}
+@media (max-width: 375px) {
+    .jumbotron-3 p {
+        width: 70%;
+        padding: 15px;
+        background-size: none;
+        padding: 50px 0;
+        font-size: 15px;
+
+    }
+
+    .jumbotron-3 h1 {
+
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .jumbotron-3 p {
+
+        width: 100%;
+
+        padding: 20px;
+    }
+}
+
+/* ----RESPOSIVE main servicios---- */
+@media (max-width: 768px) {
+
+    p.text {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container-servicios {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    p.text {
+        font-size: 15px;
+        gap: 10px;
+
+
+    }
+
+    h2 {
+        font-size: 20px;
+
+    }
+}
+@media (max-width: 425px) {
+    .container-servicios {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    p.text {
+        font-size: 15px;
+        gap: 10px;
+
+
+    }
+
+    h2 {
+        font-size: 20px;
+
+    }
+}
 /* ------------------------------seccion contacto------------------------  */
 
 /* ----RESPOSIVE  formulario de contacto---- */
@@ -1130,6 +1278,79 @@ textarea {
 }
 
 @media (max-width: 375px) {
+    .texto {
+        width: 100%;
+        /* Opcional: Ajusta el ancho según tus necesidades */
+        font-size: 15px;
+        line-height: 1.5;
+        margin: 5% 10%;
+        /* Centra horizontalmente */
+    }
+
+    .contenedor-contacto {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        /* Espacio entre las columnas */
+        max-width: 100%;
+        /* Ocupa todo el ancho de la pantalla */
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .card-mapa {
+        display: flex;
+        height: 10%;
+        align-content: center
+    }
+
+    .card-mapa img {
+        max-width: 80%;
+        /* La imagen no será más ancha que la columna */
+        height: 60%;
+        /* Mantiene la proporción de aspecto*/
+    }
+
+    .card-formulario {
+
+        display: flex;
+        flex-wrap: wrap;
+        flex: 0 0 100%;
+    }
+
+    .card-sucursales {
+        /*border: 1px solid #ccc;*/
+        padding: 20px;
+        /*border-radius: 8px;*/
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .card-sucursales p {
+        font-size: 12px;
+    }
+
+    .form label {
+        font-size: 15px;
+
+    }
+
+    .form input,
+    textarea {
+        font-size: 12px;
+
+    }
+
+    .form input[type="submit"] {
+        font-size: 15px;
+    }
+
+}
+@media (max-width: 425px) {
     .texto {
         width: 100%;
         /* Opcional: Ajusta el ancho según tus necesidades */
