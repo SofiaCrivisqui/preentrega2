@@ -848,17 +848,28 @@ textarea {
 
 /* -----------------------------seccion index---------------------------  */
 /* RESPOSIVE PORTADA INDEX */
+@media (max-width: 425px) {
+    .jumbotron {
+        background-image: url("../recursos/PORTADAINDEX375.png");
+
+    }
+    .jumbotron H1 {
+        font-size: 20px !important;
+        font-weight: bold;
+    }
+}
 @media (max-width: 375px) {
     .jumbotron {
         background-image: url("../recursos/PORTADAINDEX375.png");
 
     }
+    .jumbotron H1 {
+        font-size: 20px !important;
+        font-weight: bold;
+    }
 }
 
-.jumbotron H1 {
-    font-size: 20px !important;
-    font-weight: bold;
-}
+
 
 /* RESPOSIVE productos destacados */
 /* Tablet  */
@@ -942,6 +953,12 @@ textarea {
 }
 
 /*----- RESPOSIVE tarjeta de productos----- */
+@media (max-width: 768px){ 
+    .product-description h2{
+        font-size: 15px;
+}
+}
+
 @media (max-width: 425px) {
     .grid-container {
         display: flex;
