@@ -645,16 +645,7 @@ p.text {
 
 /*------------------ main contacto-------------- */
 
-.texto {
 
-    /* Estilos para el bloque de texto */
-    width: 40%;
-    font-size: 18px;
-    line-height: 1.5;
-    margin: 2% 35%;
-
-
-}
 
 .contenedor-contacto {
     display: grid;
@@ -1308,15 +1299,10 @@ textarea {
 }
 
 @media (max-width: 375px) {
-    .texto {
-        width: 100%;
-        /* Opcional: Ajusta el ancho según tus necesidades */
-        font-size: 15px;
-        line-height: 1.5;
-        margin: 5% 10%;
-        /* Centra horizontalmente */
-    }
 
+    .text-center{ 
+        margin: 10px 
+    }
     .contenedor-contacto {
         display: flex;
         flex-direction: row;
@@ -1379,16 +1365,12 @@ textarea {
         font-size: 15px;
     }
 
+    
 }
 
 @media (max-width: 425px) {
-    .texto {
-        width: 100%;
-        /* Opcional: Ajusta el ancho según tus necesidades */
-        font-size: 15px;
-        line-height: 1.5;
-        margin: 5% 10%;
-        /* Centra horizontalmente */
+    .text-center{ 
+        margin: 10px 
     }
 
     .contenedor-contacto {
