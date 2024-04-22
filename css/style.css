@@ -1202,7 +1202,7 @@ background-image: url("../recursos/portadaindex768.png");
         padding: 10px;
     }
 }
-@media (max-width: 425px) {
+@media (max-width: 426px) {
     .container-servicios {
         display: flex !important;
         flex-wrap: wrap !important;
