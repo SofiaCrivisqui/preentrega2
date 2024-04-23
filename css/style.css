@@ -188,12 +188,7 @@
 
 }
 
-@media all and (max-width: 500px) {
-    .cards-list {
 
-        flex-direction: column;
-    }
-}
 
 /*---------------------grid area productos destacados --------------*/
 
@@ -830,21 +825,32 @@ textarea {
         padding: 5px;
         /* Reduce el espacio de relleno */
         flex-wrap: wrap;
-        font-size: small;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     img.logo {
-        max-width: 80px;
-        /* Ajusta el tamaño del logotipo */
+        max-width: 100px;
+        padding: 5px;
     }
-}
+    }
+
 
 
 /* -----------------------------seccion index---------------------------  */
 /* RESPOSIVE PORTADA INDEX */
+@media (max-width: 768px) {
+    .jumbotron {
+        background-image: url("../recursos/portadaindex768.png");
+        background-size: cover;
+    }
+    }
 @media (max-width: 425px) {
     .jumbotron {
-        background-image: url("../recursos/PORTADAINDEX375.png");
+        background-image: url("../recursos/portadaindex426.png");
 
     }
     .jumbotron H1 {
@@ -861,6 +867,7 @@ textarea {
         font-size: 20px !important;
         font-weight: bold;
     }
+
 }
 
 
