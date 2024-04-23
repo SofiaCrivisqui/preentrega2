@@ -869,6 +869,17 @@ textarea {
     }
 
 }
+@media (max-width: 696px) {
+    .jumbotron {
+        background-image: url("../recursos/PORTADAINDEX375.png");
+
+    }
+    .jumbotron H1 {
+        font-size: 20px !important;
+        font-weight: bold;
+    }
+
+}
 
 
 
@@ -1116,7 +1127,7 @@ background-image: url("../recursos/Productos\ portada.png");
         width: 70%;
     }
 }
-@media (max-width: 425px) {
+@media (max-width: 696px) {
     .jumbotron-3{ 
         background-image: url("../recursos/portadaservicios375.png");
     }
