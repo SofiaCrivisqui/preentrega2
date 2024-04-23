@@ -256,7 +256,7 @@
 /*------------------ footer index-------------- */
 footer {
     display: flex;
-    position: fixed;
+    /*position: fixed;*/
     bottom: 0;
     width: 100%;
     height: fit-content;
@@ -906,7 +906,7 @@ textarea {
 /*----- RESPOSIVE portada de productos----- */
 @media (max-width: 768px) {
     .jumbotron-1 {
-background-image: url("../recursos/portadaindex768.png");
+background-image: url("../recursos/Productos\ portada.png");
         background-size: cover;
         padding: 50px 0;
 
@@ -955,7 +955,7 @@ background-image: url("../recursos/portadaindex768.png");
 }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 696px) {
     .grid-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -1150,7 +1150,7 @@ background-image: url("../recursos/portadaindex768.png");
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width:  696px) {
     .container-servicios {
         display: flex;
         flex-wrap: wrap;
